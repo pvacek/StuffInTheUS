@@ -10,7 +10,7 @@ shinyUI(fluidPage(
                                           choices=fullnames_layer,
                                           selected=fullnames_layer[1]),
                              selectInput("round",label="choose a point size",
-                                         choices=c(".25",".5","1","2"),
+                                         choices=c("0.25","0.5","1","2"),
                                          selected="1")),
                               mainPanel(plotOutput("map"),
                                         h6("Version 0.1, created by pvacek",align="left",style="color:blue")))))
