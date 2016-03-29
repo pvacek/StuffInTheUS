@@ -1,8 +1,8 @@
 #Map Script Server
 
 library(shiny)
-source("https://raw.githubusercontent.com/pvacek/StuffInTheUS/master/mapmaker.R")
-load(url("https://github.com/pvacek/StuffInTheUS/blob/master/featurecodes.rda?raw=true"))
+source("https://raw.githubusercontent.com/pvacek/StuffInTheUS/master/ScriptFiles/mapmaker.R")
+load(url("https://github.com/pvacek/StuffInTheUS/raw/master/ScriptFiles/featurecodes.rda"))
 
 shinyServer(function(input,output){
   output$map<-renderPlot({

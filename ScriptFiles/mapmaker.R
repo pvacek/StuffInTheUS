@@ -4,7 +4,7 @@ library(plyr)
 library(dplyr)
 library(ggthemes)
 
-load(url("https://github.com/pvacek/StuffInTheUS/blob/master/mainlist.rda?raw=true"))
+load(url("https://github.com/pvacek/StuffInTheUS/raw/master/ScriptFiles/mainlist.rda"))
 
 joinTables<-function(var1,var2,v1t="layer",v2t="layer",roundto="1"){
   df1<-mainlist[[roundto]][[v1t]][[var1]]
