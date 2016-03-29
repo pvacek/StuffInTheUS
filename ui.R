@@ -1,9 +1,7 @@
 #Map Script UI
 
 library(shiny)
-load("mainlist.rda")
-load("featurecodes.rda")
-load("fullnameslayer.rda")
+load(url("https://github.com/pvacek/StuffInTheUS/blob/master/fullnameslayer.rda?raw=true"))
 
 shinyUI(fluidPage(
   titlePanel("Where Stuff is in the U.S."),
